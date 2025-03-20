@@ -4,6 +4,7 @@ window.onload = function() {
 
     // select all divs inside container
     const divs = document.querySelectorAll('.container div');
+    let hallo = 0;
 
     // add event listener to each div
     divs.forEach((div) => {
