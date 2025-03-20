@@ -1,0 +1,77 @@
+
+body {background-color: #008080;}
+
+h1 {text-align:center;}
+p {text-align:center;}
+div {text-align:center;} 
+
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #C0C7C8;
+  padding: 20px;
+  justify-content: center;
+  margin: 80px auto;
+  max-width: 800px auto;
+  border: 4px solid;
+  border-color: #ffffff #808080 #808080 #ffffff;
+  box-shadow: 
+    inset 2px 2px 0 #e0e0e0,
+    inset -2px -2px 0 #707070,
+    5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.container > div {
+  background-color: #dfe3e3e3;
+  border: 1px solid #000000;
+  padding: 20px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.container > div:hover {
+      transform: translateY(-5px);
+      box-shadow: 
+        inset 3px 3px 5px #0000ff,
+        inset -3px -3px 5px #0000ff,
+        6px 6px 12px #000000;
+    }
+
+.container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 50px;
+  border: 4px solid;
+  border-color: #ffffff #808080 #808080 #ffffff;
+  box-shadow: 
+    inset 2px 2px 0 #e0e0e0,
+    inset -2px -2px 0 #707070;
+  transition: all 0.2s ease-in-out;
+}
+
+.container > div:active {
+  transform: translateY(2px);
+  border-color: #808080 #ffffff #ffffff #808080;
+  box-shadow: 
+    inset -2px -2px 0 #e0e0e0,
+    inset 2px 2px 0 #707070;
+  animation: press 0.2s ease-in-out;
+}
+
+
+.hidden-truth {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  margin: 10px auto;
+  font-weight: bold;
+  text-shadow: 0 0 5px #000000;
+}
+
+.truth {
+  display: block;
+  opacity: 1;
+}
